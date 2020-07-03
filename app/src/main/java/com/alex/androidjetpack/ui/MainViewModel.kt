@@ -11,11 +11,14 @@ class MainViewModel(private val repository: MainRepository) : ViewModel() {
     val contentMessage = MutableLiveData("默认值")
 
     fun getMessage() {
-        launch({
+
+        viewModelScope.launch {
             contentMessage.value = repository.netMainData()
-        }, {
-            Log.e("testme", "网络异常")
-        })
+        }
+//        launch({
+//        }, {
+//            Log.e("testme", "网络异常")
+//        })
     }
 
     private fun launch(block: suspend () -> Unit, error: suspend (Throwable) -> Unit) =

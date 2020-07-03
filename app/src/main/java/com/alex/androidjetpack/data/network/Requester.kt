@@ -14,7 +14,7 @@ class Requester {
     companion object {
         private val retrofitMap = mutableMapOf<String, Retrofit>()
 
-        private const val BASE_URL = "http://yapi.demo.qunar.com/mock/56070/007/"
+        private const val BASE_URL = "http://rest.apizza.net/mock/ba52c77a7eedae1792f1140308bbe400/"
 
         fun <T> getServiceByMain(service: Class<T>, baseUrl: String = BASE_URL): T {
             if (!retrofitMap.containsKey(baseUrl)) {
