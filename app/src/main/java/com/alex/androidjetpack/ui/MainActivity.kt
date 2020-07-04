@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun btnJumpClick(){
-            startActivity(Intent(this@MainActivity,ResultActivity::class.java))
+            startActivity(Intent(this@MainActivity,LoginActivity::class.java))
         }
     }
 }
