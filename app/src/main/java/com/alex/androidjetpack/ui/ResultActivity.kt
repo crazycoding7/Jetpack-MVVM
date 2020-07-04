@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.alex.androidjetpack.R
-import com.alex.androidjetpack.data.model.UserEntity
+import com.alex.androidjetpack.data.model.UserModel
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class ResultActivity : AppCompatActivity() {
 
 
         val model:MyViewModel by viewModels()
-        model.getUser().observe(this, Observer<List<UserEntity>> {
+        model.getUser().observe(this, Observer<List<UserModel>> {
             // update ui
             tv_second_test.text = it[0].name
         })

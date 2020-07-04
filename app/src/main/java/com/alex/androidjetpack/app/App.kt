@@ -1,4 +1,4 @@
-package com.alex.androidjetpack.ui
+package com.alex.androidjetpack.app
 
 import android.app.Application
 

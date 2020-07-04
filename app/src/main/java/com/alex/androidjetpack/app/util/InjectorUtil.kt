@@ -1,4 +1,4 @@
-package com.alex.androidjetpack.util
+package com.alex.androidjetpack.app.util
 
 import com.alex.androidjetpack.data.MainRepository
 

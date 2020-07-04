@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.alex.androidjetpack.R
 import com.alex.androidjetpack.databinding.ActivityMainBinding
-import com.alex.androidjetpack.util.InjectorUtil
+import com.alex.androidjetpack.app.util.InjectorUtil
 
 class MainActivity : AppCompatActivity() {
     val TAG:String = "MainActivity"
