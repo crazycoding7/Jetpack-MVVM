@@ -1,16 +1,13 @@
 package com.alex.androidjetpack.ui
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.alex.androidjetpack.R
 
-class MainActivity : AppCompatActivity() {
-    val TAG:String = "MainActivity"
+class ListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_list)
     }
-
 }
-

@@ -5,13 +5,6 @@
 
         <import type="android.view.View" />
 
-        <variable
-            name="viewModel"
-            type="com.alex.androidjetpack.ui.MainViewModel" />
-
-        <variable
-            name="clickHandler"
-            type="com.alex.androidjetpack.ui.MainActivity.ClickHandler" />
     </data>
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,14 +17,12 @@
             android:id="@+id/btn_hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{()->clickHandler.btnClick()}"
-            android:text="@{viewModel.contentMessage}"/>
+            android:text=""/>
 
         <Button
             android:id="@+id/btn_jump"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{()->clickHandler.btnJumpClick()}"
             android:text="jump" />
 
     </LinearLayout>

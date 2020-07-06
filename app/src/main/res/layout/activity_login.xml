@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout>
 
     <data>
-
         <import type="android.view.View" />
 
+        <variable
+            name="viewModel"
+            type="com.alex.androidjetpack.viewmodel.LoginViewModel" />
+
+        <variable
+            name="clickProxy"
+            type="com.alex.androidjetpack.ui.LoginActivity.ClickProxy" />
+        
     </data>
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        android:background="@mipmap/go_login_back"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:context=".ui.LoginActivity">
 
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="123"/>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="220dp"
+            android:background="@mipmap/go_login_up"
+            android:ellipsize="end"
+            android:hint="用户名/手机号"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/fragment_sport_item_group_tv"
+            android:textColorHint="@color/tab_font_default_color" />
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/et_username"
+            android:background="@mipmap/go_login_up"
+            android:ellipsize="end"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/tab_font_default_color" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/et_password"
+            android:onClick="@{()->clickProxy.login()}"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/go_login_btn_back"
+            android:text="登录"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
 </layout>

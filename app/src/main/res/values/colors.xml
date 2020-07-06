@@ -3,4 +3,31 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="light_white">#ceeef4</color><!--轻白色 -->
+    <color name="white">#FFFFFFFF</color><!--白色 -->
+    <color name="white_90">#e6FFFFFF</color><!--白色 -->
+    <color name="white_50">#ccFFFFFF</color><!--白色 -->
+    <color name="begin_soon">#e3e3e3</color><!--白色 -->
+    <color name="transparent">#00000000</color><!-- 透明色 -->
+    <color name="half_transparent">#e6ffffff</color><!-- 透明色 -->
+    <color name="shadow">#7F1291a2</color><!--投影色 -->
+    <color name="gray">#FF808080</color><!--灰色 -->
+    <color name="orange">#FFFFA500</color><!--橙色 -->
+    <color name="black">#FF000000</color><!--黑色 -->
+    <color name="red">#F35A5A</color><!--红色 -->
+    <color name="grey">#FF808080</color><!--灰色 -->
+    <color name="green">#FF008000</color><!--绿色 -->
+    <color name="slategrey">#FF708090</color><!--灰石色 -->
+    <color name="goldenrod">#FFDAA520</color><!--金麒麟色 -->
+    <color name="blue">#FF0000FF</color><!--蓝色 -->
+    <color name="beige">#FFF5F5DC</color><!--米色 -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_red">#e62f2f</color>
+    <color name="common_text_grey">#DDDDDD</color>
+    <color name="common_white">#ffffff</color>
+
+    <color name="tab_font_default_color">#7a7e83</color>
+    <color name="fragment_sport_item_group_tv">#333333</color>
+
 </resources>
