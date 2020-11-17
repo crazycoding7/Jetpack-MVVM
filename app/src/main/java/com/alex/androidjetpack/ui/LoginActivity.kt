@@ -3,10 +3,12 @@ package com.alex.androidjetpack.ui
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.lifecycle.Observer
 import com.alex.androidjetpack.R
 import com.alex.androidjetpack.app.base.BaseActivity
 import com.alex.androidjetpack.databinding.ActivityLoginBinding
+import com.alex.androidjetpack.ui.maplinedemo.MapLineDemoActivity
 import com.alex.androidjetpack.viewmodel.LoginViewModel
 import com.alex.jetpackmvvm.base.BaseVmDBActivity
 import kotlinx.android.synthetic.main.activity_login.*
@@ -18,6 +20,10 @@ class LoginActivity : BaseActivity<LoginViewModel,ActivityLoginBinding>() {
     override fun initView(savedInstanceState: Bundle?) {
         mDataBinding.viewModel = mViewModel
         mDataBinding.clickProxy = ClickProxy()
+
+        findViewById<Button>(R.id.btn_move_line).setOnClickListener {
+            startActivity(Intent(this,MapLineDemoActivity::class.java));
+        }
     }
 
     override fun createObserver() {
