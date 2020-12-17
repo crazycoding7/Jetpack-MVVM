@@ -33,6 +33,9 @@ public class NDKDemoActivity extends AppCompatActivity implements View.OnClickLi
 
     public native String stringFromJNI();
 
+    // 快捷键自动创建jni函数
+//    public native String testTwo();
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
