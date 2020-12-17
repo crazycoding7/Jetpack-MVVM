@@ -9,5 +9,11 @@
        android:id="@+id/btn_call_c"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="调用c++"/>
+       android:text="调用c++函数获取字符串"/>
+   <Button
+       android:layout_below="@id/btn_call_c"
+       android:id="@+id/btn_call_c_obj"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="调用c++函数生成对象并赋值"/>
 </RelativeLayout>

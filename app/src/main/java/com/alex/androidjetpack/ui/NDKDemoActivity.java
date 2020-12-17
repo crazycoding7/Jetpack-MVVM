@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alex.androidjetpack.R;
 import com.alex.androidjetpack.ui.maplinedemo.AnimatorPath.AnimatorPath;
+import com.alex.androidjetpack.ui.ndk.JniPerson;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class NDKDemoActivity extends AppCompatActivity implements View.OnClickListener {
@@ -22,9 +23,21 @@ public class NDKDemoActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.btn_call_c).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(NDKDemoActivity.this, "结果：" + stringFromJNI(), Toast.LENGTH_LONG).show();
+                Toast.makeText(NDKDemoActivity.this, "C函数返回结果：" + stringFromJNI(), Toast.LENGTH_LONG).show();
             }
         });
+
+
+        findViewById(R.id.btn_call_c_obj).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                JniPerson mJniPerson = new JniPerson();
+                mJniPerson.setAge(800);
+                Toast.makeText(NDKDemoActivity.this, "C对象指针：" + mJniPerson.getNativePerson() + " 年龄属性：" + mJniPerson.getAge(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+
     }
 
     static {
