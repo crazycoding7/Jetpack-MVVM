@@ -1,0 +1,8 @@
+local.properties
+*.iml
+*/*.iml
+/.idea
+/.gradle/*
+/app/build
+/build/intermediates/dex-cache/cache.xml
+/build
