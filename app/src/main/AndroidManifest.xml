@@ -76,7 +76,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.LoginActivity" android:launchMode="singleTop">
+        <activity android:name=".ui.maplinedemo.MapLineDemoActivity" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -88,7 +88,7 @@
         </activity>
         <activity android:name=".ui.ResultActivity" android:launchMode="singleTop"/>
         <activity android:name=".app.base.BaseActivity" android:launchMode="singleTop"/>
-        <activity android:name=".ui.maplinedemo.MapLineDemoActivity" />
+        <activity android:name=".ui.LoginActivity" />
     </application>
 
 </manifest>
