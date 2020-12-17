@@ -4,5 +4,6 @@ local.properties
 /.idea
 /.gradle/*
 /app/build
+/app/.cxx
 /build/intermediates/dex-cache/cache.xml
 /build
