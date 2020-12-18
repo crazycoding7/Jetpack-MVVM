@@ -23,7 +23,9 @@ public class NDKDemoActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.btn_call_c).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(NDKDemoActivity.this, "C函数返回结果：" + stringFromJNI(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(NDKDemoActivity.this, "C函数返回结果：" + stringFromJNI(), Toast.LENGTH_LONG).show();
+                String xx = "";
+                xx.substring(4);
             }
         });
 

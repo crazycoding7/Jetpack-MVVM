@@ -9,7 +9,7 @@ public class JniPerson {
     //构造函数
     public JniPerson(){
         nativePerson = createNativeObject();
-
+        nativePerson = 110911;
         Log.e("JniPerson", "nativePerson 指针" + nativePerson);
     }
     public void setAge(int age){
