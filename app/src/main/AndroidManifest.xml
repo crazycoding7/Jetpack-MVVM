@@ -76,7 +76,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.NDKDemoActivity" android:launchMode="singleTop">
+        <activity android:name=".ui.MainActivity" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -84,7 +84,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ListActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.NDKDemoActivity">
         </activity>
         <activity android:name=".ui.ResultActivity" android:launchMode="singleTop"/>
         <activity android:name=".app.base.BaseActivity" android:launchMode="singleTop"/>
