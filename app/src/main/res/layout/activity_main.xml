@@ -25,5 +25,11 @@
             android:layout_height="wrap_content"
             android:text="jump" />
 
+        <!-- 拖拽小红点仿QQ -->
+        <com.alex.androidjetpack.ui.view.MyDotView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 </layout>
