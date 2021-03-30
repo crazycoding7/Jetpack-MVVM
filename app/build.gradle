@@ -53,7 +53,7 @@ android {
             path file('cpp/CMakeLists.txt')
         }
     }
-    ndkVersion '22.0.7026061'
+    ndkVersion '21.0.6113669'
     dataBinding {
         enabled true
     }
