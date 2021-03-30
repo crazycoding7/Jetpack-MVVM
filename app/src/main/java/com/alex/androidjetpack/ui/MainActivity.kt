@@ -1,6 +1,7 @@
 package com.alex.androidjetpack.ui
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         btn_hello.setOnClickListener {
             //netTest()
-             testRx()
+            // testRx()
+            startActivity(Intent(MainActivity@this,TestUIEventActivity::class.java))
         }
     }
 

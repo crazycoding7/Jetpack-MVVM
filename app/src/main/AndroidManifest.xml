@@ -89,6 +89,7 @@
         <activity android:name=".ui.ResultActivity" android:launchMode="singleTop"/>
         <activity android:name=".app.base.BaseActivity" android:launchMode="singleTop"/>
         <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.TestUIEventActivity" />
     </application>
 
 </manifest>

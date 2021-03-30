@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <com.alex.androidjetpack.ui.view.MyFrameLayout
+        android:id="@+id/mFrame"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="300dp"
+        android:background="#00FFFF" >
+
+        <com.alex.androidjetpack.ui.view.MyImageView
+            android:id="@+id/mImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:background="#00FF00"
+            android:layout_gravity="center" />
+    </com.alex.androidjetpack.ui.view.MyFrameLayout>
+
+</FrameLayout>
