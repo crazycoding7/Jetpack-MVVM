@@ -24,8 +24,8 @@ public class MyFrameLayout extends FrameLayout implements View.OnClickListener, 
         Log.d(TAG,"MyFrameLayout onInterceptTouchEvent..");
 
 
-        //return super.onInterceptTouchEvent(ev);
-        return true;
+        return super.onInterceptTouchEvent(ev);
+        //return true;
     }
 
     @Override
@@ -37,13 +37,16 @@ public class MyFrameLayout extends FrameLayout implements View.OnClickListener, 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d(TAG,"MyFrameLayout onTouchEvent" + event.getAction());
-         //return super.onTouchEvent(event);
-        switch (event.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                return false;
-        }
+        return super.onTouchEvent(event);
 
-        return  true;
+
+         //return super.onTouchEvent(event);
+//        switch (event.getAction()){
+//            case MotionEvent.ACTION_DOWN:
+//                //return false;
+//        }
+
+//        return  true;
     }
 
     @Override
