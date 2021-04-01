@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_scroll_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:maxLines="3"
+            android:text="做项目的时候经常遇到需要事件分发，很多时候我们发现当我们触发了onTouch却触发不了onClick。
+            或者触发了View的事件却触发不了ViewGroup的事件。那么他们之间到底是什么关系呢，其实最终他们涉及的只是两个问题做项目的时候经常遇到需要事件分发，很多时候我们发现当我们触发了onTouch却触发不了onClick。或者触发了View的事件却触发不了ViewGroup的事件。那么他们之间到底是什么关系呢，其实最终他们涉及的只是两个问题"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
